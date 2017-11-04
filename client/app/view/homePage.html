@@ -11,22 +11,133 @@
             </section>
         
             <div class = "tab">
-                <button class="tablinks" id="Profile" data-ng-click="changeTab()">Profile</button>
-                <button class="tablinks" id="Goals" data-ng-click="changeTab()">Goals</button>
-                <button class="tablinks" id="Overview" data-ng-click="changeTab()">Overview</button>
-            </div>
-
-            <div ng-show = "Profile">
-                
-            </div>
-            <div ng-show = "Goals">
-
-            </div>
-            <div ng-show = "Overview">
-
-            </div>
+                <button class="tablinks" id="Profile" data-ng-click="toggleProfTab()">
+                    <div data-ng-click="changeTab">
+                        Profile
+                    </div>
+                </button>
+                <button class="tablinks" id="Goals" data-ng-click="toggleGoalsTab()">
+                    <div data-ng-click="changeTab">
+                        Goals
+                    </div>
+                </button>
+                <button class="tablinks" id="Overview" data-ng-click="toggleOvrvTab()">
+                    <div data-ng-click="changeTab">
+                        Overview
+                    </div>
+                </button>
+            </div>            
         </div>
     </section>
 </header>
+<li data-ng-repeat="song in songs | filter:filter.song"></li>
+    <header class="table">
+        <section>
+            <div class = "row">
+                
+                <div ng-show = "Profile">
+                    <div class="edit col-md-1" data-ng-click = "toggleNames()">
+                        <h3 class = "editText">{{editMode ? "DONE" : "EDIT"}}</h3>
+                    </div>
+                    <div ng-show="editMode">
+                        <div class="col-md-1">
+                            <button class="removeButton" data-ng-click="removeName($index)">
+                                Remove Name
+                            </button>
+                        </div>
+                    </div>
+                    <div ng-show="!editMode">
+                        <div class = "col-md-2">
+                            <img src="{{prof.imgSrc}}" class="img-responsive" />
+                        </div>
+                        <div class = "col-md-4">
+                            <h2 class = "Name">{{prof.name}}</h2>
+                            <h2 class = "f2">{{prof.f2}}</h2>
+                            <span class = "f3">{{prof.f3}}</span>
+                            <span class = "f4">{{prof.f4}}</span>
+                        </div>
+                    </div>
+                    <div ng-show="editMode">
+                        <div class="col-md-4">
+                            <input 
+                                type="text" 
+                                placeholder="name" 
+                                class="nameEdit" 
+                                data-ng-model="prof.name"
+                            >
+                            <input
+                                type="text"
+                                placeholder = "f2"
+                                class="f2Edit"
+                                data-ng-model="prof.f2"
+                            >
+                        </div>
+                        <br>
+                        <div class="col-md-4">
+                            <input
+                                type="text"
+                                placeholder = "f3"
+                                class="f3Edit"
+                                data-ng-model="prof.f3"
+                            >
+                            <input
+                                type="text"
+                                placeholder = "f4"
+                                class="f4Edit"
+                                data-ng-model="prof.f4"
+                            >
+                            <input
+                                type="text"
+                                placeholder = "image"
+                                class="imageEdit"
+                                data-ng-model="prof.imgSrc"
+                            >
+                        </div>
+                    </div>
+                    <div ng-show="addMode">
+                        <input
+                            type="text"
+                            placeholder="name"
+                            class="name"
+                            data-ng-model="newName"
+                        >
+                        <input
+                            type="text"
+                            placeholder="f2"
+                            class="f2"
+                            data-ng-model="newF2"
+                        >
+                        <input
+                            type="text"
+                            placeholder="f3"
+                            class="f3"
+                            data-ng-model="newF3"
+                        >
+                        <input
+                            type="text"
+                            placeholder="f4"
+                            class="f4"
+                            data-ng-model="newF4"
+                        >
+                        <input
+                            type="text"
+                            placeholder="img"
+                            class="img"
+                            data-ng-model="newImg"
+                        >
+                        <button style="width: 100%; height: 50px;font-family: monospace; font-size: 30px;" data-ng-click="saveNewMember()">Save</button>                        
+                    </div>
+                    <div ng-show="!addMode">
+                        <button style="width: 100%; height: 50px;font-family: monospace; font-size: 30px;" data-ng-click="newMember()">Add Member</button>
+                    </div>
+                </div>
+                <div ng-show = "Goals">
 
+                </div>
+                <div ng-show = "Overview">
 
+                </div>
+            </div>
+        </section>
+    </header>
+</li>
