@@ -37,8 +37,8 @@ demoApp.controller('mainPageCtrl', function ($scope, $window) {
         });
     }
     
-    $scope.removeSong = function (index) {
-		var spliced = $scope.songs.splice(index,1);
+    $scope.removeName = function (index) {
+		var spliced = $scope.profs.splice(index,1);
 	}
 
     $scope.toggleProfTab = function () {

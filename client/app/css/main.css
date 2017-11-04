@@ -85,3 +85,75 @@ div.tab button.active {
     border-left: none;
     height: 300px;
 }
+
+.name {
+    margin-left: 20%;
+}
+
+.f2 {
+    margin-left: 20%;
+}
+
+.f3 {
+    margin-left: 20%;
+}
+
+.f4 {
+    margin-left: 20%;
+}
+
+.edit {
+    font-size: 40px;
+    width: 100px;
+    height: 200px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.editText {
+    font-size: 40px;
+    font-family: monospace;
+    width: 45px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+    height: 200px;
+    word-wrap: break-word;
+}
+
+.removeButton {
+    width: 100px;
+    height: 200px;
+    font-size: 14px;
+  
+  }
+
+.nameEdit {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 40px;
+    width: 300px;
+    font-family: monospace;
+}
+
+.f2 {
+    margin-top: 25px;
+    font-size: 25px;
+    width: 300px;
+    font-family: sans-serif;
+}
+
+.f3 {
+    font-size: 25px;
+    font-family: monospace;
+    color: black;
+}
+
+.f4 {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.imageEdit {
+    margin-left: 50px;
+    margin-bottom: -200px;
+}
