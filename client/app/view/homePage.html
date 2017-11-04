@@ -10,19 +10,20 @@
                 </div>
             </section>
         
-            <div class="navBar" ng-controller="TabsCtrl">
-                <uib-tabset active="activePill" vertical="true" type="pills">
-                    <div class="col-md-6">
-                        <uib-tab index="0" heading="Vertical 1">Profile</uib-tab>
-                    </div>
-                    <div class="col-md-8">
-                        <uib-tab index="1" heading="Vertical 2">Goals</uib-tab>
-                    </div>
-                    <div class="col-md-6">
-                        <uib-tab index="2" heading="Vertical 2">Overview</uib-tab>
-                    </div>
-                </uib-tabset>
-                <hr />
+            <div class = "tab">
+                <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+                <button class="tablinks" onclick="openTab(event, 'Goals')">Goals</button>
+                <button class="tablinks" onclick="openTab(event, 'Overview')">Overview</button>
+            </div>
+
+            <div id = "Profile">
+
+            </div>
+            <div id = "Goals">
+                
+            </div>
+            <div id = "Overview">
+
             </div>
         </div>
     </section>
