@@ -1,19 +1,31 @@
-<header class="banner">
+<header class="table">
     <section>
-        <img src="app/images/IMG_20170922_140956.jpg" class="img-responsive"/>
+        <div class = "row">
+            <section>
+                <div class="col-md-4">
+                    <img src="app/images/stockDP.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-md-4">
+                    <div class="profileName">Bob Smith</div>
+                </div>
+            </section>
+        
+            <div class="navBar" ng-controller="TabsCtrl">
+                <uib-tabset active="activePill" vertical="true" type="pills">
+                    <div class="col-md-6">
+                        <uib-tab index="0" heading="Vertical 1">Profile</uib-tab>
+                    </div>
+                    <div class="col-md-8">
+                        <uib-tab index="1" heading="Vertical 2">Goals</uib-tab>
+                    </div>
+                    <div class="col-md-6">
+                        <uib-tab index="2" heading="Vertical 2">Overview</uib-tab>
+                    </div>
+                </uib-tabset>
+                <hr />
+            </div>
+        </div>
     </section>
-    <br>
-    <br>
-    <style type="text/css">
-        form.tab-form-demo .tab-pane {
-            margin: 20px 20px;
-        }
-    </style>
-    <div ng-controller="TabsCtrl">
-        <uib-tabset active="activePill" vertical="true" type="pills">
-            <uib-tab index="0" heading="Vertical 1">Profile</uib-tab>
-            <uib-tab index="1" heading="Vertical 2">Goals</uib-tab>
-            <uib-tab index="2" heading="Vertical 2">Overview</uib-tab>
-        </uib-tabset>
-    </div>
 </header>
+
+
