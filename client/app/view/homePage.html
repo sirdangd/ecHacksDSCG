@@ -11,18 +11,18 @@
             </section>
         
             <div class = "tab">
-                <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
-                <button class="tablinks" onclick="openTab(event, 'Goals')">Goals</button>
-                <button class="tablinks" onclick="openTab(event, 'Overview')">Overview</button>
+                <button class="tablinks" id="Profile" data-ng-click="changeTab()">Profile</button>
+                <button class="tablinks" id="Goals" data-ng-click="changeTab()">Goals</button>
+                <button class="tablinks" id="Overview" data-ng-click="changeTab()">Overview</button>
             </div>
 
-            <div id = "Profile">
-
-            </div>
-            <div id = "Goals">
+            <div ng-show = "Profile">
                 
             </div>
-            <div id = "Overview">
+            <div ng-show = "Goals">
+
+            </div>
+            <div ng-show = "Overview">
 
             </div>
         </div>

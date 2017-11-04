@@ -1,16 +1,17 @@
-angular.module('ui.bootstrap.demo').controller('TabsCtrl', function ($scope, $window) {
-    $scope.tabs = [
-      { title:'Dynamic Title 1', content:'Dynamic content 1' },
-      { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
-    ];
-  
-    $scope.alertMe = function() {
-      setTimeout(function() {
-        $window.alert('You\'ve selected the alert tab!');
-      });
-    };
-  
-    $scope.model = {
-      name: 'Tabs'
+demoApp.controller('mainPageCtrl', function ($scope, $window) {
+    $scope.changeTab = function() {
+        if ($scope.Profile == true) {
+            $scope.Goals = false;
+            $scope.Overview = false;
+            console.log("profile");
+        }else if ($scope.Goals == true) {
+            $scope.Profile = false;
+            $scope.Overview = false;
+            console.log("goals");
+        }else {
+            $scope.Profile = false;
+            $scope.Goals = false;
+            console.log("overview");
+        }
     };
   });
