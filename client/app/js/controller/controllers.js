@@ -1,13 +1,13 @@
 demoApp.controller('mainPageCtrl', function ($scope, $window) {
+    $scope.profs=[];
     $scope.Profile = true;
     $scope.Goals = false;
     $scope.Overview = false;
-    $scope.profs=[];
 
     $scope.profs.push({
         name: "Bob Smith",
-        income: "f2",
-        expense: "f3",
+        income: "40000",
+        expense: "5000",
         imgSrc : "app/images/bob.jpg"
     });
 
@@ -25,18 +25,26 @@ demoApp.controller('mainPageCtrl', function ($scope, $window) {
 		}
     }
 
+    $scope.toggleAddMode = function() {
+        $scope.addmode = !$scope.addmode;
+    }
+
     $scope.saveNewMember = function () {
         $scope.addMode = false;
         $scope.profs.push({
             name: $scope.newName,
             income: $scope.newIncome,
             expense: $scope.newExpense,
-            imgSrc: $scope.newImg
+            imgSrc: $scope.newImgSrc
         });
+        console.log($scope.profs);
+        
+        
     }
     
     $scope.removeName = function (index) {
-		var spliced = $scope.profs.splice(index,1);
+        var spliced = $scope.profs.splice(index,1);
+        conosle.log(spliced);
 	}
 
     $scope.toggleProfTab = function () {
