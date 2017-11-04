@@ -48,30 +48,41 @@ demoApp.controller('mainPageCtrl', function ($scope, $window) {
 	}
 
     $scope.toggleProfTab = function () {
-        $scope.Profile = true;
+        $scope.Profile = !$scope.Profile;
     }
     
     $scope.toggleGoalTab = function () {
-        $scope.Goals = true;
+        $scope.Goals = !$scope.Goals;
     }
 
     $scope.toggleOvrvTab = function () {
-        $scope.Overview = true;
+        $scope.Overview = !$scope.Overview;
+    }
+
+    $scope.toggleRewTab = function () {
+        $scope.Rewards = !$scope.Rewards
     }
 
     $scope.changeTab = function() {
         if ($scope.Profile == true) {
             $scope.Goals = false;
             $scope.Overview = false;
+            $scope.Rewards = false;
             console.log("profile");
         }else if ($scope.Goals == true) {
             $scope.Profile = false;
             $scope.Overview = false;
+            $scope.Rewards = false;
             console.log("goals");
+        }else if ($scope.Overview == true) {
+            $scope.Profile = false;
+            $scope.Goals = false;
+            $scope.Rewards = false;
+            console.log("overview");
         }else {
             $scope.Profile = false;
             $scope.Goals = false;
-            console.log("overview");
+            $scope.Overview = false;
         }
     };
   });
