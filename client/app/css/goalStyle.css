@@ -1,3 +1,9 @@
-h1 {
-    color: aqua;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#progressGoal {
+    float:left;
+    margin-right: 5px;
 }

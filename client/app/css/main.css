@@ -21,6 +21,52 @@ html {
 .table {
     display: table;
     width: 20%;
+    height: auto;
+}
+
+.banner section {
+    /* select all the section elements inside an element that has a banner style*/
+    display: table-row;
+    width: 100%;
+}
+
+.banner section h1 {
+    width: 60%;    
+    font-size: 3em;
+    text-align: center;
+    color: green;
+}
+
+
+h2 {
+    color: white;
+    color: white;
+    font-size: 30pt;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: Bradley Hand;
+    height: auto;
+}
+
+.banner section {
+    /* select all the section elements inside an element that has a banner style*/
+    display: table-row;
+    width: 100%;
+}
+
+.banner section h1 {
+    width: 60%;
+    
+    font-size: 3em;
+    text-align: center;
+    color: green;
+}
+
+
+h2 {
+    color: white;
+    font-size: 30pt;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: Bradley Hand;
     height: 100%;    
     background-color: lightblue;
 }
