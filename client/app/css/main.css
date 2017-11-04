@@ -135,22 +135,17 @@ div.tab button.active {
     font-family: monospace;
 }
 
-.f2 {
+.incomeEdit {
     margin-top: 25px;
     font-size: 25px;
     width: 300px;
     font-family: sans-serif;
 }
 
-.f3 {
+.expenseEdit {
     font-size: 25px;
     font-family: monospace;
     color: black;
-}
-
-.f4 {
-    font-size: 25px;
-    font-family: sans-serif;
 }
 
 .imageEdit {

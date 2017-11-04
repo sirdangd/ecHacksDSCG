@@ -6,9 +6,8 @@ demoApp.controller('mainPageCtrl', function ($scope, $window) {
 
     $scope.profs.push({
         name: "Bob Smith",
-        f2: "f2",
-        f3: "f3",
-        f4: "f4",
+        income: "f2",
+        expense: "f3",
         imgSrc : "app/images/bob.jpg"
     });
 
@@ -30,9 +29,8 @@ demoApp.controller('mainPageCtrl', function ($scope, $window) {
         $scope.addMode = false;
         $scope.profs.push({
             name: $scope.newName,
-            f2: $scope.newF2,
-            f3: $scope.newF3,
-            f4: $scope.newF4,
+            income: $scope.newIncome,
+            expense: $scope.newExpense,
             imgSrc: $scope.newImg
         });
     }

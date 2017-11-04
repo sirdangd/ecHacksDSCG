@@ -30,7 +30,7 @@
         </div>
     </section>
 </header>
-<li data-ng-repeat="prof in profs | filter:filter.prof"></li>
+<li data-ng-repeat="prof in profs | filter:filter.prof">
     <header class="table">
         <section>
             <div class = "row">
@@ -52,9 +52,8 @@
                         </div>
                         <div class = "col-md-4">
                             <h2 class = "name">{{prof.name}}</h2>
-                            <h2 class = "f2">{{prof.f2}}</h2>
-                            <span class = "f3">{{prof.f3}}</span>
-                            <span class = "f4">{{prof.f4}}</span>
+                            <h2 class = "income">{{prof.income}}</h2>
+                            <span class = "expense">{{prof.expense}}</span>
                         </div>
                     </div>
                     <div ng-show="editMode">
@@ -67,24 +66,18 @@
                             >
                             <input
                                 type="text"
-                                placeholder = "f2"
-                                class="f2Edit"
-                                data-ng-model="prof.f2"
+                                placeholder = "income"
+                                class="incomeEdit"
+                                data-ng-model="prof.income"
                             >
                         </div>
                         <br>
                         <div class="col-md-4">
                             <input
                                 type="text"
-                                placeholder = "f3"
-                                class="f3Edit"
+                                placeholder = "expense"
+                                class="expenseEdit"
                                 data-ng-model="prof.f3"
-                            >
-                            <input
-                                type="text"
-                                placeholder = "f4"
-                                class="f4Edit"
-                                data-ng-model="prof.f4"
                             >
                             <input
                                 type="text"
@@ -103,21 +96,15 @@
                         >
                         <input
                             type="text"
-                            placeholder="f2"
-                            class="f2"
-                            data-ng-model="newF2"
+                            placeholder="income"
+                            class="income"
+                            data-ng-model="newIncome"
                         >
                         <input
                             type="text"
-                            placeholder="f3"
-                            class="f3"
-                            data-ng-model="newF3"
-                        >
-                        <input
-                            type="text"
-                            placeholder="f4"
-                            class="f4"
-                            data-ng-model="newF4"
+                            placeholder="expense"
+                            class="expense"
+                            data-ng-model="newExpense"
                         >
                         <input
                             type="text"
