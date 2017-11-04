@@ -13,4 +13,4 @@ angular.module('ui.bootstrap.demo').controller('TabsCtrl', function ($scope, $wi
     $scope.model = {
       name: 'Tabs'
     };
-  });
+  });   
