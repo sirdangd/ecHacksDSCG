@@ -5,6 +5,7 @@ demoApp.appConfig = {
 	"views": [{
 		"viewUrl": "/homePage",
 		"routeConfig": {
+			"controller": "app/js/controller/controllers.js",
 			"templateUrl": "app/view/homePage.html"
 		}
 	}
