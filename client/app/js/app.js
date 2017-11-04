@@ -3,43 +3,14 @@ var demoApp = angular.module("demoApp", ["ngRoute"]);
 
 demoApp.appConfig = {
 	"views": [{
-		"viewUrl": "/view1",
+		"viewUrl": "/homePage",
 		"routeConfig": {
-			"controller": "simpleController",
-			"templateUrl": "app/view/view1.html"
-		}
-	},
-	{
-		"viewUrl": "/iKnowSongsHome",
-		"routeConfig": {
-			"controller": "iKnowSongsHomeController",
-			"templateUrl": "app/view/iKnowSongsHome.html"
-			}
-	},
-	{
-		"viewUrl": "/songTabs",
-		"routeConfig": {
-			"controller": "tabsController",
-			"templateUrl": "app/view/songTabs-1.html"
-			}
-	},
-	{
-		"viewUrl": "/view2",
-		"routeConfig": {
-			"controller": "simpleController",
-			"templateUrl": "app/view/view2.html"
-		}
-	},
-	{
-		"viewUrl": "/iKnowSongs",
-		"routeConfig": {
-			"controller": "iKnowSongsController",
-			"templateUrl": "app/view/iKnowSongs.html"
+			"templateUrl": "app/view/homePage.html"
 		}
 	}
 
 	],
-	"defaultViewUrl": "/iKnowSongs"
+	"defaultViewUrl": "/homePage"
 };
 
 demoApp.config(function ($routeProvider) {
