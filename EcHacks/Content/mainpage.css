@@ -1,0 +1,47 @@
+﻿div.containerbox {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+div.namebox {
+    border-style: solid;
+    float: left;
+    margin: 0 auto;
+    vertical-align: central;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+div.subbox {
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    text-align: center;
+}
+.companyHead { 
+    font-size:35px;
+    font-st;
+}
+#checkout {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    background-color: #4CAF50; /* Green */
+    transition-duration: 0.4s;
+    font-size: 20px;
+    margin-bottom: auto;
+    margin-left: 85%;
+    transform: translateY(-120%);
+}
+
+  #checkout:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+    }
+
+ img.amazon {
+     margin-top: 10px
+ }
