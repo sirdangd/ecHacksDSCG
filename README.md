@@ -28,4 +28,5 @@ Geld is a financing app that'll help you and your family make the best of your b
 
 
 # How to run
-- if you don't have appache on your computer already, go download that from 
+- if you don't have appache on your computer already, go download that from https://www.apachefriends.org/index.html or if you are a mac user and don't want to download something from online, use this article to help you https://medium.com/@JohnFoderaro/how-to-set-up-apache-in-macos-sierra-10-12-bca5a5dfffba
+- 
