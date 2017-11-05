@@ -10,7 +10,7 @@ Geld is a financing app that'll help you and your family make the best of your b
 We wanted to create something that was practical and had something to do with money, and so we wanted so create some kind of budgeting app. We thought about why budgeting and saving was difficult for people, and we arrived at the conclusion that it was often difficult to see the results of saving in the short term, and the reward system in Geld is a way around that.
 
 ## What it does
-
+Using frameworks and libraries such as angular and bootstrap, the app looks modern, sleek, and with the use of asp.net and mongodb, our data is flowing to-and-fro seemlsly updating all data such as family member income and expenses, points, and graph data. 
 
 ## How we built it
 The Geld front end was developed through php, CSS, HTML, Angular, and js. The bootstrap framework was used to make our website responsive and javascript was used to create the login and sign up portal. In addition many of the graphs and charts in the web 
