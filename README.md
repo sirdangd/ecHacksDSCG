@@ -30,4 +30,4 @@ We hope to refine our back end as we consider it kind rough in its current stage
 
 
 # How to run
-- if you don't have appache on your computer already, go download that from 
+- if you don't have appache on your computer already, go download that from https://www.apachefriends.org/index.html, or if you have a mac, use this article to help https://medium.com/@JohnFoderaro/how-to-set-up-apache-in-macos-sierra-10-12-bca5a5dfffba
